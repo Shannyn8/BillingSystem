@@ -1,0 +1,44 @@
+.eventbox{
+    display: flex;
+    border-radius: 12px;
+    /*
+    width: 240px;
+    */
+    width: calc(100% / 3 - 15px);
+    padding: 15px 20px;
+    background-color: var(--box1-color);
+    transition: var(--tran-05);
+    height: 150px;
+}
+.eventbox img {
+    display: block;
+    float: right;
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.details{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--text-color);
+    /*
+    border: solid black 1px;
+    */
+    width: 100%;
+}
+.admin-btn a{
+    width: 50%;
+}
+a button{
+    width: 100%;
+}
+.admin-btn{
+    display: flex;
+    flex-wrap: nowrap;
+    /*
+    border: solid black 1px;
+    */
+}

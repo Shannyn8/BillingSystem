@@ -1,0 +1,45 @@
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 100%;
+    max-width: 400px; 
+    background-color: white;
+    border-radius: 8px;
+    padding: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/*
+.buyModal img{
+    height: 200px;
+    width: 100%;
+}
+.buyModal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.modal-content {
+    text-align: center;
+}
+.eventPicture {
+    margin-bottom: 10px;
+}
+.buy-info {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    display: flex;
+    flex-direction: column;
+}
+.modal-buttons{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.modal-buttons button {
+    margin: 5px;
+    width: 50%;
+}
+*/

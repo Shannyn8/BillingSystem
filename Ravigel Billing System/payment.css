@@ -1,0 +1,110 @@
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+*/
+.container{
+    width: 390px;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1),
+                0 5px 12px -2px rgba(0, 0, 0, 0.1),
+                0 18px 36px -6px rgba(0, 0, 0, 0.1);
+}
+.container form button{
+    width: 100%;
+}
+.container .title{
+    font-size: 20px;
+}
+.container form input{
+    display: none;
+}
+.container form .category{
+    margin-top: 10px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+.category label{
+    /*
+    width: 100%;
+    height: 65px;
+    */
+    height: 145px;
+    width: 145px;
+    padding: 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    /*
+    justify-content: space-between;
+    */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+}
+/*
+label:nth-child(2), label:nth-child(3){
+    margin: 15px 0;
+}
+*/
+#visa:checked ~ .category .visa,
+#mastercard:checked ~ .category .mastercard,
+#paypal:checked ~ .category .paypal,
+#gcash:checked ~ .category .gcash{
+    box-shadow: 0 0 0 1px #6064b6;
+}
+#visa:checked ~ .category .visa .check,
+#mastercard:checked ~ .category .mastercard .check,
+#paypal:checked ~ .category .paypal .check,
+#gcash:checked ~ .category .gcash .check{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+label .imgName{
+    display: flex;
+    /*
+    justify-content: space-between;
+    */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    /*
+    gap: 10px;
+    */
+}
+.imgName .imgContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.imgContainer img{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 15px;
+}
+.check{
+    display: none;
+}
+.check i{
+    font-size: 18px;
+}
